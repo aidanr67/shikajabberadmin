@@ -1,0 +1,122 @@
+
+/*----------------------------------------------
+CSS setting for shikajabber admin kit
+------------------------------------------------*/
+#main {
+font-family: helvetica;
+width:60%;
+border: 5px solid #c7c7c7;
+margin:auto;
+color: #747474;
+text-align: center;
+height: 700px;
+}
+h1 {
+padding: 10px;
+margin:auto;
+color:#366592
+}
+h2 {
+color:#373737;
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px;
+margin:auto
+}
+#login {
+width:300px;
+border-radius:10px;
+font-family:helvetica;
+border:2px solid #ccc;
+padding:10px 40px 25px;
+margin: auto;
+margin-top:70px;
+margin-bottom:70px;
+text-align: left
+}
+input[type=text],input[type=password] {
+width:99.5%;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:16px;
+font-family:helvetica
+}
+input[type=submit] {
+width:99.5%;
+background-color:#366592;
+color:#fff;
+border:2px solid #1b3249;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin:auto;
+margin-top:15px;
+margin-bottom:15px
+}
+#adminform {
+margin:auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width:600px;
+border-radius:10px;
+font-family:helvetica;
+border:2px solid #ccc;
+padding:10px 40px 25px
+}
+#scrollbox {
+margin:auto;
+margin-bottom:50px;
+width:50%;
+height:500px;
+line-height:3em;
+overflow:scroll;
+padding:5px;
+background-color:#ccd8e3;
+color:#022c53;
+border:4px solid #c7c7c7;
+font-family:helvetica;
+text-align: left
+}
+#menu {
+margin:auto;
+width: 60%
+}
+#menubutton {
+width:200px;
+height:50px;
+background-color: #ccd8e3;
+font-family:helvetica;
+padding: 5px;
+cursor:pointer;
+font-size: 16px;
+border-radius:5px
+}
+#logoutbutton {
+float:right;
+padding:5px;
+width:200px;
+height: 50px;
+background-color: #043f77;
+border:2px solid #366592;
+color: white;
+font-family:helvetica;
+cursor:pointer;
+font-size: 16px;
+border-radius:5px
+}
+#success {
+color: green
+}
+#red{
+color:red
+}
+#green {
+color:green
+}
+#right{
+float: right;
+}
