@@ -1,8 +1,24 @@
 <?php
+include('config.php'); //DB config
 //Set session timout 10min
 ini_set("session.cookie_lifetime", "600");
-include('config.php');
-// Establishing Connection with Server by passing server_name, user_id and password as a parameter
+
+/********* cURL Token ***************************************/
+$file = $_SERVER['DOCUMENT_ROOT'] . "/../secret.txt";
+if (file_exists($file)){
+    $fh = fopen($file, r);
+    $token = fgets($fh);
+    fclose($fh);
+} else {
+    die("No token provided");
+}
+$token = rtrim($token);
+if ($_SERVER['PHP_AUTH_PW'] == $token){    
+    $_SESSION['login_user'] = 'admin';
+}
+/*************************************************************/
+ 
+// Establishing Connection with mySQL
 $conn = mysqli_connect($DBhost, $DBuser, $DBpassword, $DBdatabase);
 if (!$conn) {
 print_r("Error: Connection to Database Failed");
